@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator JS</title>
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Solway:300,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <form class="calc" name="calc">
+                <input class="view" id="view">
+            </form>
+   
+                <table>
+                    <tr> 
+                        <td><input class="btn" type="button" value="C" onclick="clean()"></td>
+                        <td><input class="btn" type="button" value="<" onclick="back()"></td>
+                        <td><input class="btn" type="button" value="*" onclick="view(value)"></td>
+                        <td><input class="btn" type="button" value="/" onclick="view(value)"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="7" onclick="view(value)"></td>
+                        <td><input class="btn" type="button" value="8" onclick="view(value)"></td>
+                        <td><input class="btn" type="button" value="9" onclick="view(value)"></td>
+                        <td><input class="btn" type="button" value="+" onclick="view(value)"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="4" onclick="view(value)"></td>
+                        <td><input class="btn" type="button" value="5" onclick="view(value)"></td>
+                        <td><input class="btn" type="button" value="6" onclick="view(value)"></td>
+                        <td><input class="btn" type="button" value="-" onclick="view(value)"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="1" onclick="view(value)"></td>
+                        <td><input class="btn" type="button" value="2" onclick="view(value)"></td>
+                        <td><input class="btn" type="button" value="3" onclick="view(value)"></td>
+                        <td rowspan="2"><input class="btn" style="height:102px;width: 50px;" type="button" value="=" onclick="callc()"></td>
+                    </tr>
+                    <tr>
+                    <td colspan="2"><input class="btn" style="width: 100px;" type="button" value="0"></td>
+                    <td><input class="btn" type="button" value="." onclick="view(value)"></td>
+                    </tr>
+                </table>
+        </div><!--calculadora-->
+        <script src="js/calculadora.js"></script>
+    </body>
+</html>
